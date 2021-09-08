@@ -13,4 +13,11 @@ describe('NavigationService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should have a exact one link to the home component', () => {
+    let links = service.getNavigationItems();
+    let homeLink = links.filter((e) => { return e.routerLink === 'home' });
+
+    expect(homeLink.length).toEqual(1);
+  });
 });
