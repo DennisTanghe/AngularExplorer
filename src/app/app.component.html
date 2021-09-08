@@ -1,0 +1,32 @@
+<header class="bg-secondary text-white d-flex align-items-center">
+  <div class="container-fluid">
+      <div class="row align-items-center">
+          <div class="col-3">
+              <h1>{{title}}</h1>
+          </div>
+          <div class="col-9">
+              <nav>
+                  <p-megaMenu [model]="items"></p-megaMenu>
+              </nav>
+          </div>
+      </div>
+  </div>
+</header>
+
+<div class="container-fluid max-height">
+  <div class="row">
+      <div class="col">
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white d-flex align-items-center">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-auto">
+              <p>&copy; Me</p>
+          </div>
+      </div>
+  </div>
+</footer>

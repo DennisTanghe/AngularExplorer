@@ -1,0 +1,21 @@
+.max-height {
+    min-height: calc(100% - 125px);
+    height: calc(100% - 125px);
+    overflow: auto;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+header {
+    min-height: 75px;
+}
+
+footer {
+    min-height: 50px;
+}
